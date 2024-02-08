@@ -1,0 +1,144 @@
+.tableContainer {
+  border-radius: 10px;
+}
+.tableRow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #212124;
+  border-bottom: 1px solid #2c2c2e;
+  padding: 20px;
+  cursor: pointer;
+}
+.statsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.statsTile {
+  width: 20%;
+  margin: 20px 0;
+  padding: 30px 30px;
+  background-color: #243325;
+  border-radius: 10px;
+}
+
+.statsValue {
+  font-size: xxx-large;
+}
+
+.statsHeader {
+  font-size: xxx-large;
+}
+.columnHeader {
+  color: #8e9d4c;
+}
+
+.modal-base {
+  top: 20%;
+  border-radius: 10px;
+  position: relative;
+  background-color: #282b27;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+  height: 40%;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+.modal-base_after-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-base_before-close {
+  transform: scale(0.2);
+  opacity: 0;
+}
+
+.overlay-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(66, 66, 66, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.overlay-base_after-open {
+  opacity: 1;
+}
+
+.overlay-base_before-close {
+  opacity: 0;
+}
+
+.roleToggler {
+  display: flex;
+  float: right;
+}
+.active {
+  background-color: #243325;
+  border-radius: 5px;
+}
+
+.userButton {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.modalTitle {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.editForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+
+.formField {
+  font-size: small;
+  margin: 10px 0;
+}
+
+.formInput {
+  background-color: #3e413c;
+  color: #737673;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 10px;
+  padding: 5px;
+}
+
+.closeButton {
+  color: #a6bf47;
+  cursor: pointer;
+}
+
+.saveButton {
+  color: #a6bf47;
+  background-color: #424540;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.modalFooter {
+  display: flex;
+  float: right;
+  align-items: center;
+}
